@@ -9,5 +9,6 @@
  *                     More info: https://expressjs.com/en/api.html#res
  */
 exports.helloGET = (req, res) => {
-  res.send('Hello World!');
+  res.send(`first: ${req.query["first"]}`);
+  res.send(`second: ${req.query["second"]}`);
 };
